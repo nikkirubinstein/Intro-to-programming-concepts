@@ -1,0 +1,43 @@
+---
+title: "Intro to Programming Concepts"
+author: "Nikki Rubinstein"
+date: "Sunday, May 22, 2016"
+output: ioslides_presentation
+---
+
+## Telling your computer what to do
+
+<!--
+![](http://upload.wikimedia.org/wikipedia/commons/d/d8/Olate_dogs_-_on_wheel.jpeg)
+![](http://www.online-image-editor.com//styles/2014/images/example_image.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Olate_dogs_-_on_wheel.jpeg" height=40/> 
+![](C:\\Users\\Administrator\\Desktop\\Olate_dogs_-_on_wheel.jpeg) -->
+
+```{r fig.width=1, fig.height=10,echo=FALSE}
+library(jpeg)
+library(grid)
+img <- readJPEG("https://i.ytimg.com/vi/STuio9YEMi8/hqdefault.jpg")
+ grid.raster(img)
+```
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
