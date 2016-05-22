@@ -96,7 +96,7 @@ grid.raster(img)
 
 ## How to add flexibility to the conversation
 **For loops**
-```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+```{r fig.width=3, fig.height=4,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//Man_and_woman_dancing_a_waltz.jpg")
 grid.raster(img) 
 ``` 
@@ -109,3 +109,19 @@ img <- readJPEG("fig//cooking.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://pixabay.com/static/uploads/photo/2015/10/30/05/48/cooking-1013455_960_720.jpg -->
+
+## Where to find help
+```{r fig.width=5, fig.height=2,echo=FALSE, fig.align='center'}
+img <- readPNG("fig//stackoverflow.png")
+grid.raster(img) 
+```
+```{r fig.width=5, fig.height=2, echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//google.jpg")
+grid.raster(img) 
+``` 
+
+## Making mistakes is the best way to learn
+```{r fig.width=7.5, fig.height=4.5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//it's ok to make mistakes.jpg")
+grid.raster(img) 
+``` 
