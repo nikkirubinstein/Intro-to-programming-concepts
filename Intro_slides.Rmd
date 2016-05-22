@@ -1,43 +1,111 @@
 ---
 title: "Intro to Programming Concepts"
 author: "Nikki Rubinstein"
-date: "Sunday, May 22, 2016"
+date: "Saturday, June 25, 2016"
 output: ioslides_presentation
 ---
 
-## Telling your computer what to do
-
-<!--
-![](http://upload.wikimedia.org/wikipedia/commons/d/d8/Olate_dogs_-_on_wheel.jpeg)
-![](http://www.online-image-editor.com//styles/2014/images/example_image.png)
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Olate_dogs_-_on_wheel.jpeg" height=40/> 
-![](C:\\Users\\Administrator\\Desktop\\Olate_dogs_-_on_wheel.jpeg) -->
-
-```{r fig.width=1, fig.height=10,echo=FALSE}
+```{r, include=FALSE}
 library(jpeg)
+library(png)
 library(grid)
-img <- readJPEG("https://i.ytimg.com/vi/STuio9YEMi8/hqdefault.jpg")
- grid.raster(img)
 ```
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Telling your computer what to do
+<!-- concept of programming languages -->
+<!-- play simon says -->
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//Olate_dogs_-_on_wheel.jpeg")
+grid.raster(img) 
+``` 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+<!-- image source: https://upload.wikimedia.org/wikipedia/commons/d/d8/Olate_dogs_-_on_wheel.jpeg -->
 
-## Slide with Bullets
+## Interacting with your computer
+<!-- introduce the idea of variables, assignment and memory storage
+at this point people should name their teams / tables -->
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readPNG("fig//Abstract_art_(PSF).png")
+grid.raster(img) 
+``` 
+<!-- image source: https://upload.wikimedia.org/wikipedia/commons/6/66/Abstract_art_(PSF).png -->
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+## Interacting with your computer
 
-## Slide with R Code and Output
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//pexels-photo.jpg")
+grid.raster(img) 
+``` 
+<!-- image source: https://static.pexels.com/photos/15393/pexels-photo.jpg -->
 
-```{r}
-summary(cars)
-```
+## What types of information does your computer understand?
+<!-- These are the building blocks of our conversation with the computer, much like words are the building blocks of a book -->
+* **numeric** 
+    + integers, e.g. `1, 2, 3`
+    + doubles, e.g. `1.25, 3.78`
+    + complex numbers, e.g. `3 + 2i`
+* **character or string** 
+    + e.g. `"Research", "Platforms"`
+* **logical** 
+    + e.g. `TRUE` and `FALSE`
 
-## Slide with Plot
+## How can we group information?
 
-```{r, echo=FALSE}
-plot(cars)
-```
+
+
+<!-- much like how we create sentences from words -->
+* vectors / tuples
+* matrices / data.frames / arrays
+* lists 
+* dictionaries
+
+## vectors / tuples
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//lechner-50119_960_720.jpg")
+grid.raster(img) 
+``` 
+<!-- image source: https://pixabay.com/static/uploads/photo/2012/06/16/20/52/lechner-50119_960_720.jpg -->
+
+## matrices / data.frames / arrays
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//House_of_Air_The_Matrix.jpg")
+grid.raster(img) 
+``` 
+<!-- image source: https://upload.wikimedia.org/wikipedia/commons/f/fa/House_of_Air_The_Matrix.jpg -->
+
+## lists
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//musical instrument collection.jpg")
+grid.raster(img) 
+``` 
+<!-- image source: http://s0.geograph.org.uk/geophotos/03/54/79/3547925_df1f2e83.jpg -->
+
+## dictionaries
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//dictionary.jpg")
+grid.raster(img) 
+``` 
+<!-- image source: https://pixabay.com/static/uploads/photo/2015/12/23/22/16/collaboration-1106196_960_720.jpg -->
+
+## How to add flexibility to the conversation
+**If statements**
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//Am I hungry.jpg")
+grid.raster(img) 
+``` 
+
+## How to add flexibility to the conversation
+**For loops**
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//Man_and_woman_dancing_a_waltz.jpg")
+grid.raster(img) 
+``` 
+<!-- image source: https://upload.wikimedia.org/wikipedia/commons/4/49/Man_and_woman_dancing_a_waltz_(rbm-QP301M8-1887-197a~6).jpg -->
+
+## How to add flexibility to the conversation
+**Functions**
+```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
+img <- readJPEG("fig//cooking.jpg")
+grid.raster(img) 
+``` 
+<!-- image source: https://pixabay.com/static/uploads/photo/2015/10/30/05/48/cooking-1013455_960_720.jpg -->
