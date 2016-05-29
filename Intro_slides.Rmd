@@ -121,14 +121,14 @@ PlatoonLeads <- data.frame(
 ```{r}
 PlatoonLeads
 ```
-## lists
+## lists / structures
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//musical instrument collection.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: http://s0.geograph.org.uk/geophotos/03/54/79/3547925_df1f2e83.jpg -->
 
-## lists
+## lists / structures
 ```{r}
 shoppingList <- list(
   breakfast = c("cereal", "milk", "orange juice", "banana"),
