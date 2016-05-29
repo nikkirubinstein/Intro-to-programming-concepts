@@ -147,14 +147,14 @@ grid.raster(img)
 <!-- image source: https://pixabay.com/static/uploads/photo/2015/12/23/22/16/collaboration-1106196_960_720.jpg -->
 
 ## dictionaries
-```{py}
+```{python}
 IMDBRatings = {"Game of Thrones": 9.4, 
     "Sherlock": 9.2, 
     "Firefly": 9.1, 
     "Friends": 8.9}
-  
+
 for movie, rating in IMDBRatings.items():
-    print (movie,':',rating)
+    print movie + ': ' + str(rating)
 ```
 ## How to add flexibility to the conversation
 **If statements**
@@ -162,6 +162,17 @@ for movie, rating in IMDBRatings.items():
 img <- readJPEG("fig//Am I hungry.jpg")
 grid.raster(img) 
 ``` 
+
+## How to add flexibility to the conversation
+**If statements**
+```{r}
+hungry <- sample(c(TRUE, FALSE), 1)
+if (hungry){
+  print("GIVE ME A TIM TAM!!!")
+} else {
+  print("No tim tam for me, thanks!")
+}
+```
 
 ## How to add flexibility to the conversation
 **For loops**
@@ -172,12 +183,40 @@ grid.raster(img)
 <!-- image source: https://upload.wikimedia.org/wikipedia/commons/4/49/Man_and_woman_dancing_a_waltz_(rbm-QP301M8-1887-197a~6).jpg -->
 
 ## How to add flexibility to the conversation
+**For loops**
+```{r}
+for (beats in 1:4){
+  print("bring left foot to right foot")
+  print("step left foot back to original position")
+  print("bring right foot to left foot")
+  print("step left foot back to original position")
+}
+```
+## How to add flexibility to the conversation
 **Functions**
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//cooking.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://pixabay.com/static/uploads/photo/2015/10/30/05/48/cooking-1013455_960_720.jpg -->
+
+## How to add flexibility to the conversation
+**Functions**
+```{r}
+moodCalendar <- function(day){
+  if (day %in% c("Friday", "Saturday", "Sunday")){
+    print(paste(day, "is a happy day"))
+  } else if (day %in% c("Monday", "Tuesday")){
+    print(paste(day, "is a grumpy day"))
+  } else {
+    print(paste(day, "is a neutral day"))
+  }
+}
+```
+```{r}
+moodCalendar("Monday")
+moodCalendar("Thursday")
+```
 
 ## Where to find help
 ```{r fig.width=5, fig.height=2,echo=FALSE, fig.align='center'}
