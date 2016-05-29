@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"Untitled\"\nauthor: \"Nikki Rubinstein\"\ndate: \"Sunday, May 22, 2016\"\noutput: slidy_presentation\n---\n\n## R Markdown\n\nThis is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.\n\nWhen you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.\n\n## Slide with Bullets\n\n- Bullet 1\n- Bullet 2\n- Bullet 3\n\n## Slide with R Code and Output\n\n```{r}\nsummary(cars)\n```\n\n## Slide with Plot\n\n```{r, echo=FALSE}\nplot(cars)\n```\n\n",
+    "created" : 1463904117672.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1666335132",
+    "id" : "FBD3F61B",
+    "lastKnownWriteTime" : 32088628384301167,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
