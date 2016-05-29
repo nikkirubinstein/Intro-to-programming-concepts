@@ -21,6 +21,16 @@ grid.raster(img)
 
 <!-- image source: https://upload.wikimedia.org/wikipedia/commons/d/d8/Olate_dogs_-_on_wheel.jpeg -->
 
+## Telling your computer what to do
+
+Some programming languages you might have heard of:  
+
+* R
+* Matlab
+* Python
+* JavaScript
+* html
+
 ## Interacting with your computer
 <!-- introduce the idea of variables, assignment and memory storage
 at this point people should name their teams / tables -->
@@ -38,6 +48,18 @@ grid.raster(img)
 ``` 
 <!-- image source: https://static.pexels.com/photos/15393/pexels-photo.jpg -->
 
+## Interacting with your computer
+Creating variables
+
+```{r}
+baby <- 'Meredith'
+sculpture <- 10
+```
+```{r}
+baby 
+sculpture
+```
+
 ## What types of information does your computer understand?
 <!-- These are the building blocks of our conversation with the computer, much like words are the building blocks of a book -->
 * **numeric** 
@@ -46,7 +68,7 @@ grid.raster(img)
     + complex numbers, e.g. `3 + 2i`
 * **character or string** 
     + e.g. `"Research", "Platforms"`
-* **logical** 
+* **logical or Boolean** 
     + e.g. `TRUE` and `FALSE`
 
 ## How can we group information?
@@ -56,7 +78,7 @@ grid.raster(img)
 <!-- much like how we create sentences from words -->
 * vectors / tuples
 * matrices / data.frames / arrays
-* lists 
+* lists / structures
 * dictionaries
 
 ## vectors / tuples
@@ -66,6 +88,16 @@ grid.raster(img)
 ``` 
 <!-- image source: https://pixabay.com/static/uploads/photo/2012/06/16/20/52/lechner-50119_960_720.jpg -->
 
+## vectors / tuples 
+```{r}
+vector1 <- 1:10
+vector2 <- c("learning", "to", "code", "is", "fun")
+```
+```{r}
+vector1
+vector2
+```
+
 ## matrices / data.frames / arrays
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//House_of_Air_The_Matrix.jpg")
@@ -73,6 +105,22 @@ grid.raster(img)
 ``` 
 <!-- image source: https://upload.wikimedia.org/wikipedia/commons/f/fa/House_of_Air_The_Matrix.jpg -->
 
+## matrices / data.frames / arrays
+```{r}
+PlatoonLeads <- data.frame(
+  list(
+    platoon = c("Data Wranglers", 
+                "Data Miners", 
+                "Data Vizards", 
+                "Cadventurers"),
+    name    = c("Kerry Halupka", 
+                "Kim Doyle", 
+                "Isabell Kiral-Kornek", 
+                "Louise van der Werff")))
+```
+```{r}
+PlatoonLeads
+```
 ## lists
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//musical instrument collection.jpg")
@@ -80,6 +128,17 @@ grid.raster(img)
 ``` 
 <!-- image source: http://s0.geograph.org.uk/geophotos/03/54/79/3547925_df1f2e83.jpg -->
 
+## lists
+```{r}
+shoppingList <- list(
+  breakfast = c("cereal", "milk", "orange juice", "banana"),
+  lunch     = c("bread", "cheese", "tomato"),
+  dinner    = c("frozen pizza", "chocolate mousse")
+  )
+```
+```{r}
+shoppingList
+```
 ## dictionaries
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//dictionary.jpg")
@@ -87,6 +146,16 @@ grid.raster(img)
 ``` 
 <!-- image source: https://pixabay.com/static/uploads/photo/2015/12/23/22/16/collaboration-1106196_960_720.jpg -->
 
+## dictionaries
+```{py}
+IMDBRatings = {"Game of Thrones": 9.4, 
+    "Sherlock": 9.2, 
+    "Firefly": 9.1, 
+    "Friends": 8.9}
+  
+for movie, rating in IMDBRatings.items():
+    print (movie,':',rating)
+```
 ## How to add flexibility to the conversation
 **If statements**
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
