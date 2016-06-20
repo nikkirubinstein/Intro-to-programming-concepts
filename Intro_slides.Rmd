@@ -4,7 +4,7 @@ author: "Nikki Rubinstein"
 date: "Saturday, June 25, 2016"
 output: ioslides_presentation
 runtime: shiny
----
+--- 
 
 ```{r, include=FALSE}
 library(shiny)
