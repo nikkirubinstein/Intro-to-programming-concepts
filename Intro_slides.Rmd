@@ -3,9 +3,11 @@ title: "Intro to Programming Concepts"
 author: "Nikki Rubinstein"
 date: "Saturday, June 25, 2016"
 output: ioslides_presentation
+runtime: shiny
 ---
 
 ```{r, include=FALSE}
+library(shiny)
 library(jpeg)
 library(png)
 library(grid)
@@ -165,13 +167,22 @@ grid.raster(img)
 
 ## How to add flexibility to the conversation
 **If statements**
-```{r}
-hungry <- sample(c(TRUE, FALSE), 1)
+```{r,echo=F}
+selectInput("hungry", "Am I hungry?", choices = c(TRUE, FALSE))
+```
+```{r,eval=F}
 if (hungry){
   print("GIVE ME A TIM TAM!!!")
 } else {
   print("No tim tam for me, thanks!")
 }
+```
+```{r,echo=F}
+renderText({if (input$hungry){
+  print("GIVE ME A TIM TAM!!!")
+} else {
+  print("No tim tam for me, thanks!")
+}})
 ```
 
 ## How to add flexibility to the conversation
@@ -202,6 +213,12 @@ grid.raster(img)
 
 ## How to add flexibility to the conversation
 **Functions**
+```{r, echo=F}
+selectInput("day", "Day of the week", choices = c("Monday", "Tuesday", 
+                                                  "Wednesday", "Thursday",
+                                                  "Friday", "Saturday",
+                                                  "Sunday"))
+```
 ```{r}
 moodCalendar <- function(day){
   if (day %in% c("Friday", "Saturday", "Sunday")){
@@ -210,12 +227,10 @@ moodCalendar <- function(day){
     print(paste(day, "is a grumpy day"))
   } else {
     print(paste(day, "is a neutral day"))
-  }
-}
+  }}
 ```
-```{r}
-moodCalendar("Monday")
-moodCalendar("Thursday")
+```{r, echo=F}
+renderText({moodCalendar(input$day)})
 ```
 
 ## Where to find help
@@ -233,3 +248,10 @@ grid.raster(img)
 img <- readJPEG("fig//it's ok to make mistakes.jpg")
 grid.raster(img) 
 ``` 
+
+## Where to learn more
+
+* Sign up for one of our training courses: [http://melbourne.resbaz.edu.au/participate](http://melbourne.resbaz.edu.au/participate)
+* [http://www.w3schools.com/](http://www.w3schools.com/)
+* [MIT Open Courseware](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/)
+* [Coursera Data Science Specialisation](https://www.coursera.org/specializations/jhu-data-science)
