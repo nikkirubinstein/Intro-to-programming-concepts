@@ -31,7 +31,7 @@ source("../tools/chunk-options.R")
 Apple's co-founder Steve Jobs once said: 
 > "I think everybody in this country should learn how to program a computer because it teaches you how to think"
 
-Coding is a very powerful tool (especially for researchers)! Have you ever tried to re-analyse your data in Microsoft Excel, only to realise that you can't remember how you analysed it last time? Then begrudged how labour-intensive the re-analysis turned out to be? Or struggled through trying to customise an analysis or plot? If you answered yes to any of these questions, then programming (the words programming and coding will be used interchangeably in this book) may be the answer to your research woes. Programming allows you to easily and quickly reproduce results and figures... **publication quality** figures.
+Coding is a very powerful tool (especially for researchers)! Have you ever tried to re-analyse your data in Microsoft Excel, only to realise that you can't remember how you analysed it last time? Then begrudged how labour-intensive the re-analysis turned out to be? Or struggled through trying to customise an analysis or plot? If you answered yes to any of these questions, then programming (the words programming and coding will be used interchangeably in this book) may be the answer to your research woes. Programming allows you to easily and quickly reproduce results and figures... **publication quality figures**.
 
 <br>
 
@@ -49,7 +49,7 @@ Some other fun things that programming can be used for (this list is in no way e
 
 <br>
 
-Like any skill, coding takes a while to learn if you want to do it well. Don’t be discouraged, because it will set you up for life. Much like learning to ride a bicycle or learning a foreign language, the hardest part is the initial learning curve. The aim of this book is to ease you into some of the generic programming lingo. You should then be set to take an introductory course in any programming language.
+Like any skill, coding takes a while to learn if you want to do it well. Don’t be discouraged, because it will set you up for life. Much like learning to ride a bicycle or learning a foreign language, the hardest part is the initial learning curve. The aim of this book is to ease you into some of the generic programming lingo. You should then be set to take an introductory course in **any** programming language.
 
 <br>
 
