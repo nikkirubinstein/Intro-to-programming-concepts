@@ -73,10 +73,14 @@ The first question that we need to ask is: what is programming? Is it magic that
 
 Unfortunately, computers don't understand human languages, e.g. English. When programming, you need to give the computer instructions in a language that it understands. This is much the same as talking to a pet dog. You expect the dog to understand 'sit', 'stay' and 'walk'. But even the most well-trained dog probably does not understand: "do you think my butt looks big in this?" or "what do you think of the current situation in Europe?". That is well outside of the dog’s understanding of both the English language and general concepts.
 
-![This dog will not discuss politics with you](../fig/Olate_dogs_-_on_wheel.jpeg)
+<br>
+
+![This dog will not discuss politics with you](../fig/Olate_dogs_-_on_wheel.jpeg =250x)
+
+<br>
 
 Your computer understands many programming languages. Here are a few that you might have heard of:
-* R
+* R (This course will have an R-flavour to it)
 * Python
 * Matlab
 * HTML
@@ -84,7 +88,7 @@ Your computer understands many programming languages. Here are a few that you mi
 * Ruby
 * Julia
 
-This course will have an R-flavour to it.
+
 
 <br>
 
