@@ -11,6 +11,9 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+<<<<<<< HEAD
 
 BuildType: Makefile
 MakefilePath: content
+=======
+>>>>>>> e5966a8f694a20b9aa55965f5ef1e20fe4a8d29e

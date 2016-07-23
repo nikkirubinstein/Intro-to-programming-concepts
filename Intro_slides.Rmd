@@ -118,18 +118,23 @@ PlatoonLeads <- data.frame(
                 "Kim Doyle", 
                 "Isabell Kiral-Kornek", 
                 "Louise van der Werff"))
+
 ```
 ```{r}
 PlatoonLeads
 ```
+
 ## lists / structures
+
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//musical instrument collection.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: http://s0.geograph.org.uk/geophotos/03/54/79/3547925_df1f2e83.jpg -->
 
+
 ## lists / structures
+
 ```{r}
 shoppingList <- list(
   breakfast = c("cereal", "milk", "orange juice", "banana"),
@@ -166,6 +171,7 @@ grid.raster(img)
 
 ## How to add flexibility to the conversation
 **If statements**
+
 ```{r,echo=F}
 selectInput("hungry", "Am I hungry?", choices = c(TRUE, FALSE))
 ```
@@ -176,6 +182,7 @@ if (hungry){
   print("No tim tam for me, thanks!")
 }
 ```
+
 ```{r,echo=F}
 renderText({if (input$hungry){
   print("GIVE ME A TIM TAM!!!")
@@ -212,12 +219,14 @@ grid.raster(img)
 
 ## How to add flexibility to the conversation
 **Functions**
+
 ```{r, echo=F}
 selectInput("day", "Day of the week", choices = c("Monday", "Tuesday", 
                                                   "Wednesday", "Thursday",
                                                   "Friday", "Saturday",
                                                   "Sunday"))
 ```
+
 ```{r}
 moodCalendar <- function(day){
   if (day %in% c("Friday", "Saturday", "Sunday")){
@@ -254,3 +263,4 @@ grid.raster(img)
 * [http://www.w3schools.com/](http://www.w3schools.com/)
 * [MIT Open Courseware](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/)
 * [Coursera Data Science Specialisation](https://www.coursera.org/specializations/jhu-data-science)
+

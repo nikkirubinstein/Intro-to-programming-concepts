@@ -12,3 +12,4 @@ You can also contribute directly on our [documentation repository](https://githu
 ## Hosting
 
 This site is hosted on [Platform.sh](https://platform.sh).
+
