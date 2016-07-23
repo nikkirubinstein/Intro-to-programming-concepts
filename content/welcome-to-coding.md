@@ -26,14 +26,17 @@ output: md_document
 
 ## Why learn to code? 
 
-Coding is a very powerful tool! Apple's co-founder Steve Jobs "I think everybody in this country should learn how to program a computer because it teaches you how to think".
+Apple's co-founder Steve Jobs once said: 
+> "I think everybody in this country should learn how to program a computer because it teaches you how to think".
+
+Coding is a very powerful tool (especially for researchers)!  
 Fast reproducibility - have you ever tried to re-analyse your data in excel - my masters experience
 Publication quality graphics
 These slides were written in R using RMarkdown
 Like any skill, coding takes a while to learn to do well - don’t be discouraged, because it will set you up for life
 My aim for this session is to introduce you to some of the programming lingo, including the building blocks of coding - data structures and basic concepts. We will spend the first hour learning about them and then in the second hour you will get to explore them yourselves using scratch (which I will tell you about then). By the end of these couple of hours, you should be ready to take a beginner course in any programming language
 
-<!--sec data-tite="Why learn to code? (YouTube)" data-id="vid1" data-show=true data-collapse=true ces-->
+<!--sec data-title="Why learn to code? (YouTube)" data-id="vid1" data-show=true data-collapse=true ces-->
 
 {%youtube%}nKIu9yen5nc{%endyoutube%}
 
