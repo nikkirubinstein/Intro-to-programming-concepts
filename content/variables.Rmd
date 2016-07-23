@@ -94,6 +94,8 @@ sculpture <- 10
 
 These variables are now stored in the computer's memory and can be referred to later.
 
+<br>
+
 <!--sec data-title="Take home messages" data-id="takehome" data-show=true data-collapse=false ces-->
 
 * We create variables that the computer can store in its memory by giving them names 
