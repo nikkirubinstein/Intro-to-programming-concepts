@@ -77,7 +77,7 @@ Unfortunately, computers don't understand human languages, e.g. English. When pr
 
 <!--![This dog will not discuss politics with you](../fig/Olate_dogs_-_on_wheel.jpeg =250x)-->
 <figure>
-  <img src="../fig/Olate_dogs_-_on_wheel.jpeg" alt="This dog will not discuss politics with you" style="width: 200px;"/>
+  <img src="../fig/Olate_dogs_-_on_wheel.jpeg" alt="This dog will not discuss politics with you" align="middle" style="width: 500px;"/>
   <figcaption>This dog will not discuss politics with you</figcaption>
 </figure>
 
