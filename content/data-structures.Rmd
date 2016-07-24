@@ -136,7 +136,7 @@ So far, the data structures that we have seen have only been able to store data 
 
 <br>
 
-<!--sec data-title="Tip: Data frames are a special type of list" data-id="tip1" data-show=true data-collapse=true ces-->
+<!--sec data-title="Tip: Data frames are a special type of list" data-id="tip2" data-show=true data-collapse=true ces-->
 
 Data frames are a special type of list that is unique to R. Data frames act like matrices in that they are broken up into rows and columns, but each column can hold a different data type.
 
