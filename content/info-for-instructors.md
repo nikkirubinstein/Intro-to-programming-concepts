@@ -45,6 +45,7 @@ This can be a really fun course to run. Here are some examples of interactive ac
 * Split the attendees into teams and get them to come up with team names. Use these team names throughout the workshop when asking for volunteers
 * To illustrate the different data types, print out squares of coloured paper (use a different colour for each data type) and get attendees to fill in examples of the appropriate data type for each square. Here is a [template](../data types - print on coloured paper.docx)
 * Ask attendees to use the coloured paper data types to create examples of data structures
+* Use an [online timer](https://www.google.com.au/search?q=timer) to let attendees know how long they have for each challenge
 * Create data structures of people. Get a team to come up to the front and demonstrate a vector/matrix/list of people
 * When discussing conditionals, get attendees to play 'Simon Says'
 * When discussing loops, get attendees to give you dance moves to dance out. Show the code written as both a loop and as an exhaustive list of instructions
