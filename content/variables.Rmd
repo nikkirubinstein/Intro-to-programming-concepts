@@ -84,12 +84,16 @@ Here are a couple of example of creating variables in R. The name of the variabl
 
 ```{r}
 baby <- 'Meredith'
+
+baby
 ```
 
 The second line of code says: create a variable called sculpture and assign it the value 10.
 
 ```{r}
 sculpture <- 10
+
+sculpture
 ```
 
 These variables are now stored in the computer's memory and can be referred to later.

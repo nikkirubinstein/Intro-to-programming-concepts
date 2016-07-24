@@ -41,6 +41,7 @@ Some other fun things that programming can be used for (this list is in no way e
 * mobile app creation
 * making robots
 * cracking codes
+* writing this book
 * world domination (think outside the box)
 
 <!--endsec-->

@@ -83,6 +83,15 @@ Here are a couple of example of creating variables in R. The name of the variabl
 
 ~~~sourcecode
 baby <- 'Meredith'
+
+baby
+~~~
+
+
+
+~~~output
+[1] "Meredith"
+
 ~~~
 
 The second line of code says: create a variable called sculpture and assign it the value 10.
@@ -90,6 +99,15 @@ The second line of code says: create a variable called sculpture and assign it t
 
 ~~~sourcecode
 sculpture <- 10
+
+sculpture
+~~~
+
+
+
+~~~output
+[1] 10
+
 ~~~
 
 These variables are now stored in the computer's memory and can be referred to later.

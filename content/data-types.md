@@ -7,7 +7,10 @@ output: md_document
 
 <!--sec data-title="Learning Objective" data-id="obj" data-show=true data-collapse=false ces-->
 
-* to recognise that there are 3 different data types that the computer understands: numbers, logicals and character strings
+* to recognise that there are 3 different data types that the computer understands:
+  * numbers 
+  * logicals 
+  * character strings
 
 <!--endsec-->
 
@@ -23,10 +26,11 @@ output: md_document
 
 ---
 
-## Data types
+## Introduction
 
 
-We now know about variables: to store something in the computer's memory, we need to name it. What type of information can we store? In spoken language we have nouns, verbs, adverbs, etc. In programming we can use numbers, logicals and character strings. 
+We now know about variables: to store something in the computer's memory, we need to name it. What type of information can we store? In spoken language we have nouns, verbs, adverbs, etc. In programming we can use numbers, logicals and character strings.
+
 <br>
 
 ---
@@ -36,7 +40,7 @@ We now know about variables: to store something in the computer's memory, we nee
 Numbers can be:
 * integers or whole numbers, such as `1`, `2`, `3`
 * doubles with decimal point values, such as `1.25`, `3.75`
-* complex with imaginary components such as `3 + 2i`, `9 + 6i`
+* complex numbers with imaginary components such as `3 + 2i`, `9 + 6i`
 
 <br>
 
