@@ -141,6 +141,6 @@ You now have the skills to make an animation. What animation will you create?
 
 <!--sec data-title="Tip: Saving your animation" data-id="tip1" data-show=true data-collapse=true ces-->
 
-To save your animation, 'Download to your computer' from the File drop-down menu. To re-open a saved animation, navigate to the Scratch website and select 'Upload from your computer' from the File drop-down menu. Note: You will not be able to view the animation by double clicking on the file.
+To save your animation, select 'Download to your computer' from the File drop-down menu. To re-open a saved animation, navigate to the Scratch website and select 'Upload from your computer' from the File drop-down menu. **Note:** You will not be able to view the animation by double clicking on the file.
 
 <!--endsec-->
