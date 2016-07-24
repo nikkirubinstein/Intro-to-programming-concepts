@@ -117,21 +117,21 @@ D. Row 4, Column 3
 
 <!--endsec-->
 
+<br>
+
 Here is an example of a matrix written in R. The matrix is named `PlatoonLeads`. In ResBaz we are broken up into three different platoons, each with its own lead. The `PlatoonLeads` matrix contains 2 columns (platoon and name) and 4 rows, each representing a different platoon. 
 
 
 ~~~sourcecode
 PlatoonLeads <- matrix(
   c("Data Wranglers", 
-    "Data Miners", 
-    "Data Vizards", 
+    "Data Miners",  
     "Cadventurers", 
     "Kerry Halupka", 
-    "Kim Doyle", 
-    "Isabell Kiral-Kornek", 
+    "Kim Doyle",  
     "Louise van der Werff"), 
-  ncol=2, # specifies the number of columns
-  dimnames=list(NULL,c("platoon","name"))) # specifies the names of the columns
+  ncol=2,
+  dimnames=list(NULL,c("platoon","name"))) 
 
 PlatoonLeads
 ~~~
@@ -142,8 +142,7 @@ PlatoonLeads
      platoon          name                  
 [1,] "Data Wranglers" "Kerry Halupka"       
 [2,] "Data Miners"    "Kim Doyle"           
-[3,] "Data Vizards"   "Isabell Kiral-Kornek"
-[4,] "Cadventurers"   "Louise van der Werff"
+[3,] "Cadventurers"   "Louise van der Werff"
 
 ~~~
 
@@ -231,7 +230,7 @@ $moneyInWallet
 
 ## Dictionaries
 
-The final data structure we will look at is dictionaries. Dictionaries are unique to the Python programming language and contain pairs of variables: values and keys. When we created vectors, we could refer to an element by its number in the vector. In contrast dictionaries are unordered and you look up elements by their key. Much like opening a dictionary, where the word is the key and the definition is the value. 
+The final data structure we will look at is dictionaries. Dictionaries are unique to the Python programming language and contain pairs of variables: values and keys. When we created vectors, we referred to each element by its position number in the vector. In contrast, dictionaries are unordered and you refer to elements by their key. Much like opening a dictionary, where the word is the key and the definition is the value. 
 
 <br>
 
@@ -252,6 +251,8 @@ The keys must all be the same data types and the values must be the same data ty
 Think of an example of a dictionary. Remember that the keys must be all the same data type and the values must be of the same data type, but the data type of the keys and values can be different.
 
 <!--endsec-->
+
+<br>
 
 Here is an example of a dictionary written in Python. The dictionary is named `IMDBRatings`. The keys are character strings: `"Game of Thrones"`, `"Sherlock"`, `"Firefly"` and `"Friends"` and the values are numeric values that represent the average rating of those tv shows on IMDB
 
@@ -301,7 +302,7 @@ B. 10
 
 C. 8
 
-D. The at Row number 4 and Column number 3 doesn't exist, since there are only 3 rows in the matrix!
+D. The element at Row number 4 and Column number 3 doesn't exist, since there are only 3 rows in the matrix!
 
 <!--endsec-->
 
@@ -315,4 +316,4 @@ Element 3: a character string vector
 
 Element 4: a logical matrix
 
-<!--endsec-->/
+<!--endsec-->

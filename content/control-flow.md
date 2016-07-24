@@ -1,102 +1,289 @@
-Data types
-==========
+---
+output: md_document
+---
+
+
+# Adding flexibility to the conversation
 
 <!--sec data-title="Learning Objectives" data-id="obj" data-show=true data-collapse=false ces-->
--   to fill in later
+
+* to understand the use of conditionals
+* to learn that repeated commands can be replaced by loops
+* to understand the use of functions
 
 <!--endsec-->
+
 <br>
 
-------------------------------------------------------------------------
+---
 
 **Table of Contents**
 
 <!-- toc -->
+
 <br>
 
-------------------------------------------------------------------------
+---
 
-Introduction
-------------
+## Introduction
 
-So now we know a bit about the data types and data structures that
-computers can understand. The next step is to talk about programming
-concepts. With each example, I’ve shown you a piece of code to create
-data types. So we can create data types and we can assign them value and
-store them with names as variables. But what if we wanted to query them.
-What if we only wanted to run our code if certain conditions were met?
-Such as I only want to analyse the data for participants that have no
-missing values, or only for people over the age of 75, only for people
-that have brown hair? This is where conditionals come in to the picture.
-Everyone up on your feet. Let’s play Simon Says…. In this case, you were
-being the computer. I gave you a conditional statement, if I say simon
-says then follow the instructions, otherwise don’t do anything. The
-important parts here are the word if, the condition that needs to be met
-- in this case whether I said Simon Says, which can evaluate to a
-logical values - true if I said Simon Says and false otherwise and then
-the instructions to follow if the conditional is true and the
-instructions to follow if the conditional is false. Let me give you
-another example, if number is greater than 5, yell out greater than 5,
-else yell out not greater than 5. Number is 6. Number is 4. Number is 5?
-I think you’ve got it. Here is an example of some code written in R to
-check whether I should eat the tim tam. If I’m hungry then the computer
-will print out give me a tim tam!! If I’m not hungry, then the computer
-will tell me to politely decline the tim tam. Hungry is a logical value
-that is true if I’m hungry and false otherwise. And that is
-conditionals. Now we’re going to look at loops. One way we can write
-code is to spell out each instruction one by one. Even though it might
-be a bit repetitive. If we wanted to print the numbers 1:10 we could say
-print 1, print 2, print 3, print 4, etc. Or if we want to analyse
-patient data, we could say analyse data for patient 1, analyse data for
-patient 2, analyse data for patient 3, etc. If you have several hundred
-patients, that would end up being a lot of copy and paste! This is where
-we can use loops. When you’re repeating the same instructions - such as
-print or analyse - over different data, you can use a for loop. Let’s
-create one now. For each table in the room, yell out the team name and
-the number of people sitting on your table. Let’s start at the back of
-the room. We’ve just created a for loop. The important thing to note is
-that we have a collection of items that we want to apply the
-instructions to - in this case the tables in the room - and the set of
-instructions - which were to yell out the table name and number of
-people sitting on the table Now you can create a for loop for me - you
-can give me 4 dance moves - make them simple because I’m not very good -
-and I will repeat them 4 times Here I have an example of the two step,
-universally popular with uncoordinated people. I have written the
-instructions once but have asked the computer to repeat them 4 times for
-me. You can see that they quickly exceed the length of my slide. The
-items I am repeating the instructions over are the numbers 1 to 4 and
-the instructions are the dance steps. Hopefully you get the message that
-for loops are useful for repeating instructions over a collection of
-items and can save you time on writing lots of lines of code as well as
-a lot of copy and paste! The last concept we’re going to talk about is
-my favourite, functions. Functions are a series of instructions that we
-have given a name to. We can then call that function by name and the
-instructions will be run by the computer. This is again useful to reduce
-the amount of copy and paste required when repeating instructions. An
-example might be that you are constantly wanting to convert units from
-celsius to fahrenheit. You could store the formula as a function called
-convertcelsiustofahrenheit and then call it each time you want to make
-that conversion. Then you don’t need to remember the formula We use
-functions all the time. When I walk across the room, I am telling my
-brain to walk, but I’m not consciously telling it which muscles need to
-be activated for that to happen. In this case the function would be
-named walk and the series of instructions required to walk would be
-stored in that function. Note that you can’t access the instructions
-inside a function when you call it by name. You only get the output. So
-the temperature conversion function will convert temperatures for you,
-but not give you the temperature conversion formula. Another function
-can be found in cooking. When following a recipe, cookbooks often assume
-knowledge. They assume that you will understand that dice means take a
-knife and cut ingredient into small cubes. In this case the function
-name is dice and the instructions are to take a knife and cut
-ingredients into small cubes. Or that sautee means fry quickly in a
-little hot fat. You can also artificially create functions. Let’s create
-a function called name the singer. You can be the computer and evaluate
-the function for me. Name the singer of hit me baby one more time. Name
-the singer of Story of My Life. Name the singer of the Piano Man. Great
-work. Again, I want to stress that I don’t know the steps that you took
-to come to your answer, I only get to know what the answer was. Here is
-an example of a function that I have written in R called moodCalendar. I
-could give you this function so that you can check what my mood is
-likely to be on any given day so that you can decide whether you want to
-talk to me that day….
+Now we know a bit about the different data types and data structures that computers can understand. The next step is to learn about programming concepts. 
+
+<br>
+
+---
+
+## Conditionals
+
+With each data structure in the previous section, you've seen a piece of code used to create an example of that data structure. You know that we can create data types and store them with names as variables. But what if we wanted to query them. What if we only wanted to run our code if certain conditions were met? Such as I only want to analyse the data for participants that have no missing values, or only for people over the age of 75, or only for people that have brown hair? This is where conditionals come into the picture.
+
+Have you ever played the game 'Simon Says'? Briefly, how the game works is that one person gives instructions. The rest of the people in the room are meant to follow the instructions if they were preceded by the words 'Simon says' and ignore the instructions otherwise. Anyone who performs an instruction that was not preceded by the words 'Simon says' is out of the game.
+
+The game 'Simon Says' is a form of conditional. The person giving the instructions is acting as the programmer and the rest of the people in the room are acting as the computer. The condition to be met is that the programmer says the words 'Simon says'. This can be evaluated to `TRUE` (in the case where the programmer did say 'Simon says') or `FALSE` (in the case where the programmer didn't say 'Simon says'). The instructions for the computer to follow are different depending on whether the conditional was `TRUE` (follow the instruction) or `FALSE` (ignore the instruction).
+
+<br>
+
+<!--sec data-title="Challenge 1" data-id="ch1" data-show=true data-collapse=false ces-->
+
+This time I will be the programmer and you will be the computer. The rules are:
+* If the number is greater than 5, answer: GREATER THAN 5
+* If the number is not greater than 5, answer: NOT GREATER THAN 5
+
+What is your answer for the following numbers?
+
+A. 6
+
+B. 8
+
+C. 4
+
+D. 5
+
+<!--endsec-->
+
+<br>
+
+<!--sec data-title="Take home messages for conditionals" data-id="takehome1" data-show=true data-collapse=false ces-->
+
+* Conditionals begin with the word 'if' followed by a condition
+* The condition evaluates to a logical value (`TRUE` or `FALSE`)
+* There are separate instructions to follow for `TRUE` and `FALSE` conditions
+
+<!--endsec-->
+
+<br>
+
+Here is an example of a conditional written in R to check whether I should eat the tim tam. If I’m hungry (`TRUE`) then the computer will print out "GIVE ME A TIM TAM!!" If I’m not hungry (`FALSE`), the computer will tell me to politely decline the tim tam. 
+
+
+~~~sourcecode
+hungry <- TRUE
+
+if (hungry){
+  print("GIVE ME A TIM TAM!!!")
+} else {
+  print("No tim tam for me, thanks :)")
+}
+~~~
+
+
+
+~~~output
+[1] "GIVE ME A TIM TAM!!!"
+
+~~~
+
+
+~~~sourcecode
+hungry <- FALSE
+
+if (hungry){
+  print("GIVE ME A TIM TAM!!!")
+} else {
+  print("No tim tam for me, thanks :)")
+}
+~~~
+
+
+
+~~~output
+[1] "No tim tam for me, thanks :)"
+
+~~~
+
+<br>
+
+---
+
+## Loops
+
+One way that we can write code is to spell out each instruction one by one. However, sometimes this gets a bit repetitive... If we wanted to print the numbers 1:10, we could say print 1, print 2, print 3, print 4, etc. Or if we want to analyse patient data, we could say analyse data for patient 1, analyse data for patient 2, analyse data for patient 3, etc. If you have several hundred patients, that would end up being a lot of copy and paste! This is where loops come in handy. 
+
+When you’re repeating the same instructions - such as print or analyse - over different data, you can use a for loop. The same instructions are repeated but the data used is different for each iteration of the loop. An example of this would be asking for a person's name. The question ('What's your name?') will be the same every time, but the result will be different depending on the person that you ask! (Unless they are all called Barry, in which case you should consider broadening your friendship group).
+
+<br>
+
+<!--sec data-title="Challenge 2" data-id="ch2" data-show=true data-collapse=false ces-->
+
+Can you think of any repetitive tasks that you do that could be described by a for loop?
+
+<!--endsec-->
+
+<br>
+
+<!--sec data-title="Take home messages for loops" data-id="takehome2" data-show=true data-collapse=false ces-->
+
+* Loops are used to repeat a single set of instructions over a collection of data
+* Loops require a lot less typing (or copying and pasting) than writing out the instructions separately for each element in the collection of data
+
+<!--endsec-->
+
+<br>
+
+Here is an example of the two step dance - universally popular with uncoordinated people - written in R. The steps have been repeated 4 times. Notice how much shorter the written code is compared to the output.
+
+
+~~~sourcecode
+for (beats in 1:4){
+  print("bring left foot to right foot")
+  print("step left foot back to original position")
+  print("bring right foot to left foot")
+  print("step right foot back to original position")
+}
+~~~
+
+
+
+~~~output
+[1] "bring left foot to right foot"
+[1] "step left foot back to original position"
+[1] "bring right foot to left foot"
+[1] "step right foot back to original position"
+[1] "bring left foot to right foot"
+[1] "step left foot back to original position"
+[1] "bring right foot to left foot"
+[1] "step right foot back to original position"
+[1] "bring left foot to right foot"
+[1] "step left foot back to original position"
+[1] "bring right foot to left foot"
+[1] "step right foot back to original position"
+[1] "bring left foot to right foot"
+[1] "step left foot back to original position"
+[1] "bring right foot to left foot"
+[1] "step right foot back to original position"
+
+~~~
+
+<br>
+
+---
+
+## Functions
+
+The last concept covered in this section is functions. Functions are a series of instructions that have been given a name (yes, that means that they are variables!). Whenever we want to run that set of instructions we can call the function by name. This is again useful to reduce the amount of copy and paste required when repeating instructions. 
+
+An example might be that you are constantly wanting to convert units from Celsius to Fahrenheit. You could store the formula as a function called `convertCelsiusToFahrenheit` and then call it each time you want to make that conversion. By storing the formula as a function, you don't need to remember the details of the formula anymore; you just need to remember the function name. 
+
+<br>
+
+<!--sec data-title="Tip: Function scope" data-id="tip1" data-show=true data-collapse=true ces-->
+
+Note that you can’t access the instructions inside a function when you call it by name. You only get the output. So the temperature conversion function will convert temperatures for you, but not give you the temperature conversion formula.
+
+<!--endsec-->
+
+<br>
+
+We use functions all the time! When you walk across the room, you are giving your brain the command to walk. But you don't consciously tell it which muscles need to be activated for that to happen. In this case the function would be named walk and the series of instructions required to walk would be stored in that function.  
+
+Another function can be found in cooking. When following a recipe, cookbooks often assume knowledge. They assume that you will understand that dice means take a knife and cut ingredients into small cubes. In this case the function name is dice and the instructions are to take a knife and cut ingredients into small cubes. 
+
+<!--sec data-title="Challenge 3" data-id="ch3" data-show=true data-collapse=false ces-->
+
+You can also artificially create functions. Let’s create a function called `nameTheSinger`. What would the output of `nameTheSinger` be for the following input arguments?
+
+A. Story of my life
+
+B. Hit me baby one more time
+
+C. Piano man
+
+<!--endsec-->
+
+<br>
+
+<!--sec data-title="Take home messages for functions" data-id="takehome3" data-show=true data-collapse=false ces-->
+
+* Functions contain a set of instructions that can be called by name
+* Putting instructions in a function can save a lot of copying and pasting!
+
+<!--endsec-->
+
+<br>
+
+Here is an example of a function called `moodCalendar` written in R. I have give you this function so that you can check what my mood is likely to be on any given day. You will then be able to make an informed decision as to whether you want to talk to me that day... It looks like Friday is a better optin than Monday!
+
+
+~~~sourcecode
+moodCalendar <- function(day){
+  if (day %in% c("Friday", "Saturday", "Sunday")){
+    print(paste(day, "is a happy day"))
+  } else if (day %in% c("Monday", "Tuesday")){
+    print(paste(day, "is a grumpy day"))
+  } else {
+    print(paste(day, "is a neutral day"))
+  }}
+~~~
+
+
+~~~sourcecode
+moodCalendar("Monday")
+~~~
+
+
+
+~~~output
+[1] "Monday is a grumpy day"
+
+~~~
+
+
+
+~~~sourcecode
+moodCalendar("Friday")
+~~~
+
+
+
+~~~output
+[1] "Friday is a happy day"
+
+~~~
+
+## Challenge solutions
+
+<!--sec data-title="Solution to Challenge 1" data-id="ch1sol" data-show=true data-collapse=true ces-->
+
+A. GREATER THAN 5
+
+B. GREATER THAN 5
+
+C. NOT GREATER THAN 5
+
+D. NOT GREATER THAN 5
+
+<!--endsec-->
+
+
+<!--sec data-title="Solution to Challenge 3" data-id="ch3sol" data-show=true data-collapse=true ces-->
+
+A. One Direction
+
+B. Britney Spears
+
+C. Billy Joel
+
+(You should not be ashamed for knowing the answers to any of these songs!)
+
+<!--endsec-->
+
