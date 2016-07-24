@@ -148,7 +148,7 @@ Data frames are a special type of list that is unique to R. Data frames act like
 <!--sec data-title="Challenge 3" data-id="ch3" data-show=true data-collapse=false ces-->
 
 ```{r, echo=FALSE}
-list(1, c(1:10), c("third","element"),matrix(T,F,T,F,ncol=2))
+list(1, c(1:10), c("third","element"),matrix(c(T,F,T,F),ncol=2))
 ```
 
 What data type and data structure is each element of the above list?

@@ -171,8 +171,20 @@ Data frames are a special type of list that is unique to R. Data frames act like
 <!--sec data-title="Challenge 3" data-id="ch3" data-show=true data-collapse=false ces-->
 
 
-~~~err
-Error in matrix(T, F, T, F, ncol = 2): 'dimnames' must be a list
+~~~output
+[[1]]
+[1] 1
+
+[[2]]
+ [1]  1  2  3  4  5  6  7  8  9 10
+
+[[3]]
+[1] "third"   "element"
+
+[[4]]
+      [,1]  [,2]
+[1,]  TRUE  TRUE
+[2,] FALSE FALSE
 
 ~~~
 
