@@ -30,7 +30,7 @@ source("../tools/chunk-options.R")
 
 Now you get to use your new programming knowledge! Scratch is a programming language that lets you create interactive stories. The code is presented in blocks so you can choose the code that you want and drag it onto the screen. To use Scratch all you need is an internet browser (e.g. Chrome, Firefox).
 
-In your internet browser, open the following link: [https://scratch.mit.edu.au](https://scratch.mit.edu.au). Click on Create in the menu at the top of the screen. This should take you to a page that looks like:
+In your internet browser, open the following link: [https://scratch.mit.edu](https://scratch.mit.edu). Click on Create in the menu at the top of the screen. This should take you to a page that looks like:
 
 ![scratch](../fig/scratch1.png)
 
