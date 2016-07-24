@@ -221,7 +221,7 @@ C. Piano man
 
 <br>
 
-Here is an example of a function called `moodCalendar` written in R. I have give you this function so that you can check what my mood is likely to be on any given day. You will then be able to make an informed decision as to whether you want to talk to me that day... It looks like Friday is a better optin than Monday!
+Here is an example of a function called `moodCalendar` written in R. I have give you this function so that you can check what my mood is likely to be on any given day. You will then be able to make an informed decision as to whether you want to talk to me that day... It looks like Friday is a better option than Monday!
 
 
 ~~~sourcecode
@@ -259,6 +259,10 @@ moodCalendar("Friday")
 [1] "Friday is a happy day"
 
 ~~~
+
+<br>
+
+---
 
 ## Challenge solutions
 
