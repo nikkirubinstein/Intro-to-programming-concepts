@@ -208,7 +208,7 @@ for (beats in 1:4){
   print("bring left foot to right foot")
   print("step left foot back to original position")
   print("bring right foot to left foot")
-  print("step left foot back to original position")
+  print("step right foot back to original position")
 }
 ```
 ## How to add flexibility to the conversation
