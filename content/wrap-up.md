@@ -4,7 +4,7 @@ output: md_document
 
 
  
-# Data types
+# Wrapping up
 
 <!--sec data-title="Learning Objective" data-id="obj" data-show=true data-collapse=false ces-->
 
@@ -26,10 +26,10 @@ output: md_document
 
 ## Where to from here?
 
-You are now set to take a beginner course in **any** programming language! You can sign up for one of our free training courses at [http://melbourne.resbaz.edu.au/participate](http://melbourne.resbaz.edu.au/participate). You can also come see us at Hacky Hour: 3-4pm Thursdays at Tsubu. We would love to discuss your programming challenges.
+You are now set to take a beginner course in **any** programming language! You can sign up for one of our free training courses at [http://melbourne.resbaz.edu.au/participate](http://melbourne.resbaz.edu.au/participate). You can also come see us at Hacky Hour: 3-4pm on Thursdays at Tsubu. We would love to discuss your programming challenges.
 
  If you would like to continue with some self-directed learning, there are many online courses available, such as:
-* [http://www.w3schools.com/](http://www.w3schools.com/)
+* [w3schools](http://www.w3schools.com/)
 * [MIT Open Courseware](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-094-introduction-to-matlab-january-iap-2010/)
 * [Coursera Data Science Specialisation](https://www.coursera.org/specializations/jhu-data-science)
 
@@ -39,7 +39,7 @@ You are now set to take a beginner course in **any** programming language! You c
 
 ## Where to find help
 
-When you start coding (and even when you are an experienced coder), [Google](www.google.com.au) is your friend. Google searches will often direct you to a website called [stackoverflow](stackoverflow.com) where people post and answer programming-related questions. 
+When you start coding (and even when you are an experienced coder), [Google](www.google.com.au) is your friend. Google searches will often direct you to a website called [stackoverflow](www.stackoverflow.com) where people post and answer programming-related questions. 
 
 <br>
 

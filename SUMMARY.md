@@ -8,3 +8,4 @@
 * [Adding flexibility to the conversation](content/control-flow.md)
 * [Playing with code](content/scratch.md)
 * [Wrapping up](content/wrap-up.md)
+* [Information for instructors](content/info-for-instructors.md)

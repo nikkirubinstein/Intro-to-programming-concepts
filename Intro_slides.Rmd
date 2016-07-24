@@ -1,7 +1,6 @@
 ---
 title: "Introduction to Programming Concepts"
 author: "Nikki Rubinstein"
-date: "Saturday, June 25, 2016"
 output: ioslides_presentation
 runtime: shiny
 --- 
@@ -79,8 +78,8 @@ sculpture
 
 <!-- much like how we create sentences from words -->
 * vectors / tuples
-* matrices / data.frames / arrays
-* lists / structures
+* matrices / arrays
+* lists / structures / data frames
 * dictionaries
 
 ## vectors / tuples
@@ -100,31 +99,31 @@ vector1
 vector2
 ```
 
-## matrices / data.frames / arrays
+## matrices / arrays
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//House_of_Air_The_Matrix.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://upload.wikimedia.org/wikipedia/commons/f/fa/House_of_Air_The_Matrix.jpg -->
 
-## matrices / data.frames / arrays
+## matrices / arrays
 ```{r}
-PlatoonLeads <- data.frame(
-    platoon = c("Data Wranglers", 
-                "Data Miners", 
-                "Data Vizards", 
-                "Cadventurers"),
-    name    = c("Kerry Halupka", 
-                "Kim Doyle", 
-                "Isabell Kiral-Kornek", 
-                "Louise van der Werff"))
+PlatoonLeads <- matrix(
+  c("Data Wranglers", 
+    "Data Miners",  
+    "Cadventurers", 
+    "Kerry Halupka", 
+    "Kim Doyle",  
+    "Louise van der Werff"), 
+  ncol=2,
+  dimnames=list(NULL,c("platoon","name"))) 
 
 ```
 ```{r}
 PlatoonLeads
 ```
 
-## lists / structures
+## lists / structures / data frames
 
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
 img <- readJPEG("fig//musical instrument collection.jpg")
@@ -133,14 +132,14 @@ grid.raster(img)
 <!-- image source: http://s0.geograph.org.uk/geophotos/03/54/79/3547925_df1f2e83.jpg -->
 
 
-## lists / structures
+## lists / structures / data frames
 
 ```{r}
 shoppingList <- list(
-  breakfast = c("cereal", "milk", "orange juice", "banana"),
-  lunch     = c("bread", "cheese", "tomato"),
-  dinner    = c("frozen pizza", "chocolate mousse")
-  )
+  lunch         = c("bread", "cheese", "tomato"),
+  dinner        = c("frozen pizza", "chocolate mousse"),
+  moneyInWallet = 40.50
+)
 ```
 ```{r}
 shoppingList
