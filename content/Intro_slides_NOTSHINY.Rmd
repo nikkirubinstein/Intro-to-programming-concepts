@@ -6,8 +6,8 @@ output: ioslides_presentation
 
 ```{r, include=FALSE}
 library(shiny)
-library(jpeg, lib.loc = "lib")
-library(png, lib.loc = "lib")
+library(jpeg, lib.loc = "../lib")
+library(png, lib.loc = "../lib")
 library(grid)
 ```
 
@@ -15,7 +15,7 @@ library(grid)
 <!-- concept of programming languages -->
 <!-- play simon says -->
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//Olate_dogs_-_on_wheel.jpeg")
+img <- readJPEG("..//fig//Olate_dogs_-_on_wheel.jpeg")
 grid.raster(img) 
 ``` 
 
@@ -35,7 +35,7 @@ Some programming languages you might have heard of:
 <!-- introduce the idea of variables, assignment and memory storage
 at this point people should name their teams / tables -->
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readPNG("fig//Abstract_art_(PSF).png")
+img <- readPNG("..//fig//Abstract_art_(PSF).png")
 grid.raster(img) 
 ``` 
 <!-- image source: https://upload.wikimedia.org/wikipedia/commons/6/66/Abstract_art_(PSF).png -->
@@ -43,7 +43,7 @@ grid.raster(img)
 ## Interacting with your computer
 
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//pexels-photo.jpg")
+img <- readJPEG("..//fig//pexels-photo.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://static.pexels.com/photos/15393/pexels-photo.jpg -->
@@ -83,7 +83,7 @@ sculpture
 
 ## vectors / tuples
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//lechner-50119_960_720.jpg")
+img <- readJPEG("..//fig//lechner-50119_960_720.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://pixabay.com/static/uploads/photo/2012/06/16/20/52/lechner-50119_960_720.jpg -->
@@ -100,7 +100,7 @@ vector2
 
 ## matrices / arrays
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//House_of_Air_The_Matrix.jpg")
+img <- readJPEG("..//fig//House_of_Air_The_Matrix.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://upload.wikimedia.org/wikipedia/commons/f/fa/House_of_Air_The_Matrix.jpg -->
@@ -125,7 +125,7 @@ PlatoonLeads
 ## lists / structures / data frames
 
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//musical instrument collection.jpg")
+img <- readJPEG("..//fig//musical instrument collection.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: http://s0.geograph.org.uk/geophotos/03/54/79/3547925_df1f2e83.jpg -->
@@ -145,7 +145,7 @@ shoppingList
 ```
 ## dictionaries
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//dictionary.jpg")
+img <- readJPEG("..//fig//dictionary.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://pixabay.com/static/uploads/photo/2015/12/23/22/16/collaboration-1106196_960_720.jpg -->
@@ -163,7 +163,7 @@ for movie, rating in IMDBRatings.items():
 ## How to add flexibility to the conversation
 **If statements**
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//Am I hungry.jpg")
+img <- readJPEG("..//fig//Am I hungry.jpg")
 grid.raster(img) 
 ``` 
 
@@ -196,7 +196,7 @@ if (hungry){
 ## How to add flexibility to the conversation
 **For loops**
 ```{r fig.width=3, fig.height=4,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//Man_and_woman_dancing_a_waltz.jpg")
+img <- readJPEG("..//fig//Man_and_woman_dancing_a_waltz.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://upload.wikimedia.org/wikipedia/commons/4/49/Man_and_woman_dancing_a_waltz_(rbm-QP301M8-1887-197a~6).jpg -->
@@ -214,7 +214,7 @@ for (beats in 1:4){
 ## How to add flexibility to the conversation
 **Functions**
 ```{r fig.width=5, fig.height=5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//cooking.jpg")
+img <- readJPEG("..//fig//cooking.jpg")
 grid.raster(img) 
 ``` 
 <!-- image source: https://pixabay.com/static/uploads/photo/2015/10/30/05/48/cooking-1013455_960_720.jpg -->
@@ -255,17 +255,17 @@ moodCalendar("Friday")
 ```
 ## Where to find help
 ```{r fig.width=5, fig.height=2,echo=FALSE, fig.align='center'}
-img <- readPNG("fig//stackoverflow.png")
+img <- readPNG("..//fig//stackoverflow.png")
 grid.raster(img) 
 ```
 ```{r fig.width=5, fig.height=2, echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//google.jpg")
+img <- readJPEG("..//fig//google.jpg")
 grid.raster(img) 
 ``` 
 
 ## Making mistakes is the best way to learn
 ```{r fig.width=7.5, fig.height=4.5,echo=FALSE, fig.align='center'}
-img <- readJPEG("fig//it's ok to make mistakes.jpg")
+img <- readJPEG("..//fig//it's ok to make mistakes.jpg")
 grid.raster(img) 
 ``` 
 
